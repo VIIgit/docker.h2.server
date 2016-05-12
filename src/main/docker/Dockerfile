@@ -24,7 +24,7 @@ RUN curl ${DOWNLOAD} -o h2.zip \
 
 EXPOSE 81 1521
 
-CMD ["java", "-jar", "/opt/h2/bin/h2-1.4.191.jar", \
+CMD ["java", "-jar", "/opt/h2/bin/h2-1.4.191.jar", \gg
  	"-web", "-webAllowOthers", "-webPort", "81", \
  	"-tcp", "-tcpAllowOthers", "-tcpPort", "1521", \
  	"-baseDir", "/opt/h2/data"] 
